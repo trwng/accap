@@ -18,7 +18,6 @@ struct secondview: View {
             
            
                 
-                //hello
                 
             VStack(alignment: .leading, spacing: 20) {
                 

@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BD7E58EE2A4B173200627FAC /* accapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E58ED2A4B173200627FAC /* accapApp.swift */; };
-		BD7E58F02A4B173200627FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E58EF2A4B173200627FAC /* ContentView.swift */; };
 		BD7E58F22A4B173300627FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7E58F12A4B173300627FAC /* Assets.xcassets */; };
 		BD7E58F52A4B173300627FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7E58F42A4B173300627FAC /* Preview Assets.xcassets */; };
 		BD7E58FF2A4B173300627FAC /* accapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E58FE2A4B173300627FAC /* accapTests.swift */; };
 		BD7E59092A4B173300627FAC /* accapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E59082A4B173300627FAC /* accapUITests.swift */; };
 		BD7E590B2A4B173300627FAC /* accapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E590A2A4B173300627FAC /* accapUITestsLaunchTests.swift */; };
-		BDA855012A4C700600167BC5 /* secondview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA855002A4C700600167BC5 /* secondview.swift */; };
+		BDA2DA402A4C9107007287F8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2DA3F2A4C9107007287F8 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		BD7E58EA2A4B173200627FAC /* accap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7E58ED2A4B173200627FAC /* accapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accapApp.swift; sourceTree = "<group>"; };
-		BD7E58EF2A4B173200627FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD7E58F12A4B173300627FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7E58F42A4B173300627FAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD7E58FA2A4B173300627FAC /* accapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = accapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +43,7 @@
 		BD7E59042A4B173300627FAC /* accapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = accapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7E59082A4B173300627FAC /* accapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accapUITests.swift; sourceTree = "<group>"; };
 		BD7E590A2A4B173300627FAC /* accapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accapUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BDA855002A4C700600167BC5 /* secondview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondview.swift; sourceTree = "<group>"; };
+		BDA2DA3F2A4C9107007287F8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				BD7E58ED2A4B173200627FAC /* accapApp.swift */,
-				BD7E58EF2A4B173200627FAC /* ContentView.swift */,
-				BDA855002A4C700600167BC5 /* secondview.swift */,
+				BDA2DA3F2A4C9107007287F8 /* SwiftUIView.swift */,
 				BD7E58F12A4B173300627FAC /* Assets.xcassets */,
 				BD7E58F32A4B173300627FAC /* Preview Content */,
 			);
@@ -260,9 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7E58F02A4B173200627FAC /* ContentView.swift in Sources */,
 				BD7E58EE2A4B173200627FAC /* accapApp.swift in Sources */,
-				BDA855012A4C700600167BC5 /* secondview.swift in Sources */,
+				BDA2DA402A4C9107007287F8 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

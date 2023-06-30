@@ -5,28 +5,32 @@
 //  Created by scholar on 6/28/23.
 //
 
+
 import SwiftUI
-struct SwiftUIView: View {
+struct ContentView: View {
     
     var body: some View {
         NavigationStack {
             
             ZStack {
                 
-                Image("green1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .edgesIgnoringSafeArea(.all)
-              
+                Group {
+                    
+                    Image("green1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .edgesIgnoringSafeArea(.all)
+                    
+                    Text("")
+                    Image("darkgreen")
+                        .resizable()
+                        .frame(width: 400.0, height: 120.0)
+                        .cornerRadius(30)
+                        .position(x: 195, y:650)
+                        .opacity(0.5)
+                }
                 
-                Image("darkgreen")
-                    .resizable()
-                    .frame(width: 400.0, height: 120.0)
-                    .cornerRadius(30)
-                    .position(x: 195, y:650)
-                    .opacity(0.5)
-                  
                 Image("darkgreen")
                     .resizable()
                     .frame(width: 150.0, height: 120.0)
@@ -40,7 +44,7 @@ struct SwiftUIView: View {
                     .cornerRadius(30)
                     .position(x: 115, y:-30)
                     .opacity(0.2)
-                  
+                
                 
                 Image("textbox")
                     .resizable()
@@ -71,44 +75,41 @@ struct SwiftUIView: View {
                     .resizable()
                     .frame(width: 200.0, height: 400.0)
                     .position(x:20, y:408)
-                    .toolbar {
- 
-                        ToolbarItemGroup(placement: .bottomBar) {
+                
+                VStack {
+                 
+                    NavigationLink(destination: ListView()) {
+                        Text("Tasks")
+                            .position(x:200, y:650)
                             
-                            Button {
-                                print("Edit button was tapped")
-                            } label: {
-                                Image("house")
-                                    .resizable()
-                                    .frame(width: 60.0, height: 60.0)
-                                
-                            }
-                            Spacer()
-                            Button {
-                                print("Edit button was tapped")
-                            } label: {
-                                Image("check")
-                                    .resizable()
-                                .frame(width: 60.0, height: 60.0)}
-                            Spacer()
-                            Button {
-                                print("Edit button was tapped")
-                            } label: {
-                                Image("setting")
-                                    .resizable()
-                                .frame(width: 60.0, height: 60.0)}
-                                
-                              
-                                
-                            }
-                        }
+                        
+                            .font(.title)
+                            .tint(.white)
+                    Image("stuff")
+                            .resizable()
+                            .frame(width:300,height:350)
+                            .position(x:50,y:380)
+                        
                     }
+                    
+                    
+                    
+                    
+                    
+                }
+            }
+            NavigationStack {
+                VStack {
+                 
+                       
+                    
+                }
             }
         }
     }
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            SwiftUIView()
+            ContentView()
         }
     }
     
@@ -116,4 +117,9 @@ struct SwiftUIView: View {
     
     
     
-
+    
+    
+    
+    
+    
+}
